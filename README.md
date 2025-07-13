@@ -89,7 +89,11 @@ Schedule_Player/
 
 2. **필수 패키지 설치**
    ```bash
-   pip install PySide6
+   # 방법 1: requirements.txt 사용 (권장)
+   pip install -r requirements.txt
+   
+   # 방법 2: 개별 설치
+   pip install PySide6>=6.4.0
    ```
 
 3. **실행**

@@ -1,0 +1,26 @@
+# 실행 파일과 필요한 리소스만 포함
+# 나머지는 모두 제외
+
+# 실행 파일 포함
+!dist/schedule_player.exe
+!dist/*.exe
+
+# 필요한 리소스 포함
+!dist/schedule_player.ico
+!dist/*.ico
+
+# 플러그인 포함 (실행에 필요)
+!plugins/
+
+# 스케줄 파일 예시 포함
+!dist/sch/
+!*.sch
+
+# README 포함
+!README.md
+
+# 라이선스 파일 포함
+!LICENSE
+
+# 나머지 모든 파일 제외
+* 
