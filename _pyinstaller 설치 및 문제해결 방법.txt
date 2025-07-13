@@ -1,0 +1,53 @@
+공식홈페이지
+  http://www.pyinstaller.org/
+
+설치(pip3 로는 에러 가 발생함)
+  pip install pyinstaller 
+
+명령
+  pyinstaller main.py
+
+  pyinstaller -F -w main.py
+      -F : 하나의 실행파일로 만들어 주는 역할
+      -w : 별도의 콘솔창이 없이 윈도우 모드로만 실행
+
+생성 > 여러개의 라이브러리와 함께 설치됨.
+  C:\Users\USER\PycharmProjects\pythonProject\dist\main
+
+실행파일에 아이콘 넣기
+  pyinstaller --icon=alarm.ico -F -w main.py
+
+**************** pyside6 오류 해결 방법 **************************
+https://blog.csdn.net/qq_41730930/article/details/112612864
+https://github.com/pyinstaller/pyinstaller/issues/5414
+********************************************************************
+ C:\Users\user\AppData\Local\Programs\Python\Python310\Lib\site-packages\PySide6  폴더의
+
+C:\Users\user\AppData\Local\Programs\Python\Python39\Lib\site-packages\PySide6
+
+  \plugins
+  \translations
+  qt.conf
+
+  > 2개의 폴더, 1개의 파일을
+
+ C:\Users\USER\PycharmProjects\pythonProject  에 복사
+
+*****************  아이콘 변경, exe용량 줄이기  ***********************************
+https://coding-kindergarten.tistory.com/84
+https://velog.io/@pjs102793/Pyinstaller로-만든-실행-파일-UPX로-용량-줄이기
+
+
+###############################################3
+pyinstaller --upx-dir D:\upx396 --onedir main.py
+D:\upx-3.96-win64
+
+pyinstaller --upx-dir D:\upx396 --onedir main.py
+
+
+<주의> installer 만들때, 아래 주석처리
+    # PySide6Ui('ui_menu_main.ui').toPy()
+    # PySide6Ui('ui_schedule_line.ui').toPy()
+
+##################
+pyinstaller --icon=schedule_player.ico -F -w main.py
