@@ -1,9 +1,13 @@
 # Schedule Player
 
+
 ## 소개
 **Schedule Player**는 수업, 시험, 알림 등 정해진 시간에 맞춰 음악 또는 알림음을 자동으로 재생해주는 Windows용 스케줄러 프로그램입니다. PySide6 기반의 GUI를 제공하며, 다양한 오디오 파일을 지정된 시간에 자동으로 재생할 수 있습니다.
 
 ---
+
+<img width="1464" height="734" alt="image" src="https://github.com/user-attachments/assets/90c13be4-1d7d-4d57-b538-bbfd57e2c2d5" />
+
 
 ## 주요 기능
 - 여러 개의 스케줄(일정) 등록 및 관리
